@@ -1,0 +1,268 @@
+*{  
+    box-sizing: border-box;
+    
+}
+body{
+    color:white;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-image: url("logo.png");
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+   
+    font-family: monospace;
+    height: 100vh;
+    justify-content: center;
+}
+.nav{
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100vw;
+    z-index: 1;
+
+}
+.name{
+    position: absolute;
+    color: skyblue;
+    justify-content: left;
+    left: 0;
+}
+
+
+.name:hover{
+    color:#fb8c00;
+}
+.nav ul{
+    display: flex;
+    list-style:none;
+    align-items: center;
+}
+.nav ul li a{
+    text-decoration:  none;
+    color: white;
+    font-size: 16px;
+    margin-right: 25px;
+    transition:  0.3s ease;
+}
+.nav ul li:hover a{
+    color:skyblue;
+    font-size: 25px;
+}
+.but{
+    position: absolute;
+    right:0;
+}
+
+@keyframes jump {
+    0%{transform:translateY(0)}
+    25%{transform: translateY(-10px);}
+    50%{transform: translateY(0);}
+    75%{transform: translateY(-5px);}
+    100%{transform: translateY(0);}
+}
+.hire{
+    width:10vw;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background: skyblue;
+    padding:8px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius:10px;
+    border-style:groove;
+}
+.hire:hover{
+    background: #fb8c00;
+    animation: jump 0.5s ease;
+
+}
+.pic{
+    opacity: 0;
+    animation : fadein 1.5s forwards;
+    animation-delay:1.5s;
+    transition: 1s ease;
+    transition-delay: 1.5s;
+
+    padding-top:100px;
+    padding-left: 10px;
+    padding-bottom: 1%;
+    position: absolute;
+    display: flex;
+    float:inline-start;
+    height:50vw;
+    width: auto;
+}
+
+@keyframes moveR {
+    0% {transform: translateX(0);}
+    100%{transform: translateX(100%);}
+}
+
+
+
+
+.main{
+    color: white;
+    opacity:1;
+    font-family: "Kode Mono", monospace;
+    font-size: medium;
+    display: flex;
+    position: relative;
+    max-height: fit-content;
+    min-height: 50vw;
+    width: 50%;
+    max-height: fit-content;
+    vertical-align: middle;
+    margin-top: 10vw;
+    padding:10%;
+    display:inline-block;
+    flex-grow:1;
+    flex-direction: column;
+    text-align: end;
+    justify-content: center;
+
+    transition:all;
+    animation: moveR 1.5s linear forwards;
+
+}
+
+@media only screen and (max-width: 414px) {
+    .nav{
+        position:relative;
+        display:block;
+        padding:0;
+        margin: 0;
+        text-align: center;
+    }
+    .nav ul{
+        line-height: 50px;
+        display: block;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        position:relative;
+        padding:0;
+        margin: 0;
+    }
+.name{
+    position: relative;
+}
+
+.nav .but{
+    visibility: collapse;
+}
+
+    .pic{
+        position: relative;
+        height:auto;
+        width: 100%;
+        padding-bottom: 5vw;
+        padding-top: 10vw;
+    }
+    .main{
+       text-align: center;
+       width:100vw;
+       animation: fadein 1.5s forwards;
+
+    }
+}
+
+
+.sub{
+    transition: 0.5s ease;
+    
+}
+.main .sub:hover{
+    color: #fb8c00;
+    font-size:large;
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+.logo{
+    
+    position: absolute;
+    justify-items: center;
+    width:200px;
+    height: auto;
+}
+
+
+.services{
+    text-align: center;
+    align-items: center;
+}
+
+
+.option{
+    color:skyblue;
+    padding-top: 20px;
+    border-radius: 5px;
+    font-family: "anta";
+    margin: 10px 10px 10px 10px;
+    border-color: white;
+    display:block;
+    align-items: center;
+
+}
+i{
+    color:white;
+}
+.option:hover, i:hover{
+    animation: jump 0.5s ease;
+    color:skyblue;
+    cursor: pointer;
+}
+
+#icon{
+    padding:10px;
+    font-size: 4em;
+}
+#test{
+    padding:10px;
+    font-size:8em;
+}
+.qf{
+    
+    position:relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.qf .hire:hover{
+        background: #fb8c00;
+        animation: jump 0.5s ease;
+}
+
+
+
+.qf ul li{
+    padding-top: 20px;
+    border-radius: 5px;
+    font-family: "anta";
+    margin: 10px 10px 10px 10px;
+    color: skyblue;
+    display:block;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact{
+    padding-bottom: 15vw;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.contact i{
+
+    font-size: 10em;
+
+}
