@@ -1,4 +1,4 @@
-
+alert("This is a beta verstion!this page is currently in development");
 
 function scr1() {
     // Get the target section by its ID
