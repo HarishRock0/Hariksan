@@ -1,4 +1,4 @@
-alert("This is a beta verstion!this page is currently in development!");
+//alert("This is a beta verstion!this page is currently in development!");
 function hire(){
     alert("If you want to hire please contact me by the contact details below this page!");
 }
