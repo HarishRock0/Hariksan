@@ -1,7 +1,14 @@
-//alert("This is a beta verstion!this page is currently in development!");
+
 function hire(){
-    alert("If you want to hire please contact me by the contact details below this page!");
+    var txt;
+    if (confirm("please contact me for hires using the contact details below!")) {
+      scr3();
+    }
 }
+
+function myFunction() {
+   
+  }
 function scr1() {
     // Get the target section by its ID
     const targetSection = document.getElementById('qf');
