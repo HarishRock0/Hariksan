@@ -16,7 +16,7 @@ body{
     justify-content: center;
 }
 .nav{
-    background-color: black;
+    background: none;
     position: fixed;
     display: flex;
     justify-content: center;
