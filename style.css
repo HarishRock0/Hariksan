@@ -36,6 +36,17 @@ body{
 .name:hover{
     color:#fb8c00;
 }
+
+
+.slogan {
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    }
+
+.glitch {
+    color:#fb8c00;
+    }
 .nav ul{
     display: flex;
     list-style:none;
