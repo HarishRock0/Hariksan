@@ -45,7 +45,7 @@ function scr4(){
 "Where Creativity Meets Professionalism",
 "Freelance Excellence, Tailored to You""],
 t="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]<>.,;:",
-n=document.querySelector(".slogan"),o=(e,t,n)=>e.classList[n?"add":"remove"](t),
+n=document.querySelector(".name"),o=(e,t,n)=>e.classList[n?"add":"remove"](t),
 a=e=>Math.random()*e|0;let c=0;const r=()=>{o(n,"glitch",0);const r=e[c],
     s=r.length;let d=0;const l=setInterval(()=>{n.textContent=[...r].map((e,n)=>n<d?e:t[a(t.length)]).join(""),
     ++d>s&&(clearInterval(l),o(n,"glitch",1),n.dataset.text=n.textContent,c=(c+1)%e.length)},15)},s=()=>{r(),setInterval(r,4e3)};
