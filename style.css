@@ -38,10 +38,11 @@ body{
 }
 
 
-.slogan {
+.name .slogan {
     font-size: 24px;
-    color: #333;
-    position: inherit;
+    color: skyblue;
+    font-size:small;
+    display: block;
     }
 
 .glitch {
