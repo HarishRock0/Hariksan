@@ -35,19 +35,42 @@ function scr4(){
 }
 
 
-//<![CDATA[
-(()=>{const e=["Crafting Dreams, One Project at a Time",
-"Your Vision, My Mission",
-"Innovative Solutions for Modern Problems",
-"Turning Ideas into Reality",
-"Expertise You Can Trust",
-"Designing Success Together",
-"Where Creativity Meets Professionalism",
-"Freelance Excellence, Tailored to You"],
-t="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]<>.,;:",
-n=document.querySelector(".name"),o=(e,t,n)=>e.classList[n?"add":"remove"](t),
-a=e=>Math.random()*e|0;let c=0;const r=()=>{o(n,"glitch",0);const r=e[c],
-    s=r.length;let d=0;const l=setInterval(()=>{n.textContent=[...r].map((e,n)=>n<d?e:t[a(t.length)]).join(""),
-    ++d>s&&(clearInterval(l),o(n,"glitch",1),n.dataset.text=n.textContent,c=(c+1)%e.length)},15)},s=()=>{r(),setInterval(r,4e3)};
-/complete|interactive/.test(document.readyState)?setTimeout(s,1):document.addEventListener("DOMContentLoaded",s)})();
-//]]>
+
+    (() => {
+      const slogans = [
+        "#1 Trusted Cybersecurity News Platform",
+        "Bits, Bytes, and Breaking News",
+        "Decrypting Tomorrow's Threats Today",
+        "sudo apt-get update cyber_news",
+        "Don't Get Pwned, Get Informed"
+      ];
+      const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]<>.,;:";
+      const sloganElement = document.querySelector(".slogan");
+      const toggleClass = (element, className, add) => element.classList[add ? "add" : "remove"](className);
+      const getRandomIndex = length => Math.random() * length | 0;
+
+      let currentIndex = 0;
+
+      const glitchEffect = () => {
+        toggleClass(sloganElement, "glitch", false);
+        const currentSlogan = slogans[currentIndex];
+        const sloganLength = currentSlogan.length;
+        let progress = 0;
+        const interval = setInterval(() => {
+          sloganElement.textContent = [...currentSlogan].map((char, index) => index < progress ? char : chars[getRandomIndex(chars.length)]).join("");
+          if (++progress > sloganLength) {
+            clearInterval(interval);
+            toggleClass(sloganElement, "glitch", true);
+            sloganElement.dataset.text = sloganElement.textContent;
+            currentIndex = (currentIndex + 1) % slogans.length;
+          }
+        }, 40);
+      };
+
+      const startGlitchCycle = () => {
+        glitchEffect();
+        setInterval(glitchEffect, 4000);
+      };
+
+      /complete|interactive/.test(document.readyState) ? setTimeout(startGlitchCycle, 1) : document.addEventListener("DOMContentLoaded", startGlitchCycle);
+    })();
