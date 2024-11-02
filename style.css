@@ -30,6 +30,7 @@ body{
     color: skyblue;
     justify-content: left;
     left: 0;
+    font-size: 30px;
 }
 
 
@@ -38,14 +39,14 @@ body{
 }
 
 
-.slogan {
-    font-size: 24px;
+.name .slogan {
+    font-size: 25px;
     color: skyblue;
     font-size:small;
     display: block;
     }
 
-.glitch {
+.name .glitch {
     color:#fb8c00;
     }
 .nav ul{
