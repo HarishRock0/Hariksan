@@ -38,11 +38,16 @@ function scr4(){
 
     (() => {
       const slogans = [
-        "#1 Trusted Cybersecurity News Platform",
-        "Bits, Bytes, and Breaking News",
-        "Decrypting Tomorrow's Threats Today",
-        "sudo apt-get update cyber_news",
-        "Don't Get Pwned, Get Informed"
+    "Your Vision, Our Craftsmanship",
+    "Turning Ideas into Reality",
+    "Innovation at Your Fingertips",
+    "Where Creativity Meets Excellence",
+    "Freelance Brilliance, Delivered",
+    "Tailored Solutions for Your Success",
+    "Crafting Digital Dreams",
+    "Expertise You Can Rely On",
+    "Your Partner in Progress",
+    "Transforming Concepts into Success"
       ];
       const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]<>.,;:";
       const sloganElement = document.querySelector(".slogan");
