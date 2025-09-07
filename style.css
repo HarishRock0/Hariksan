@@ -1,6 +1,5 @@
 *{  
     box-sizing: border-box;
-    
 }
 body{
     color:white;
@@ -23,7 +22,6 @@ body{
     align-items:center;
     width:100vw;
     z-index: 1;
-
 }
 .name{
     position: absolute;
@@ -33,11 +31,18 @@ body{
     font-size: 30px;
 }
 
+#xml{
+    font-size: 65%;
+    color:white;
+    align-items: center;
+    display:relative;
+    
+}
+
 
 .name:hover{
     color:#fb8c00;
 }
-
 
 .name .slogan {
     font-size: 25px;
@@ -230,7 +235,7 @@ body{
 i{
     color:white;
 }
-.option:hover, i:hover{
+.option:hover, i:hover , #xml:hover{
     animation: jump 0.5s ease;
     color:skyblue;
     cursor: pointer;
