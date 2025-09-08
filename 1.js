@@ -1,4 +1,16 @@
-
+function Detail(a){
+  if (a==1){
+    alert("HTML is a Markup Language used for web development")
+  }else if (a==2){
+    alert("CSS is used to create styles in a web page")
+  }else if (a==3){
+    alert("JavaScript is used to create interactive web pages")
+  }else if (a==4){
+    alert("PHP is a server-side scripting language used to create dynamic web pages")
+  }else if (a==5){
+    alert("XML is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable")
+  }
+}
 function hire(){
     var txt;
     if (confirm("please contact me for hires using the contact details below!")) {

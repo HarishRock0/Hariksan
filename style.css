@@ -240,6 +240,11 @@ i{
     color:skyblue;
     cursor: pointer;
 }
+#xml:hover{
+    animation: jump 0.5s ease;
+    color:skyblue;
+    cursor: pointer;
+}   
 
 #icon{
     padding:10px;
