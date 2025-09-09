@@ -9,6 +9,18 @@ function Detail(a){
     alert("PHP is a server-side scripting language used to create dynamic web pages")
   }else if (a==5){
     alert("XML is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable")
+  }else if (a==6){
+    alert("Python is a high-level, general-purpose programming language")
+  }else if (a==7){
+    alert("Java is a high-level, object-oriented programming language")
+  }else if (a==8){
+    alert("C++ is a general-purpose programming language")
+  }else if (a==9){
+    alert("R is a programming language and free software environment for statistical computing and graphics")
+  }else if (a==10){
+    alert("Flutter is an open-source UI software development kit created by Google")
+  }else if (a==11){
+    alert("Django is a high-level Python web framework that enables rapid development of secure and maintainable websites")
   }
 }
 function hire(){
