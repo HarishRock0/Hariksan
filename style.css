@@ -254,6 +254,12 @@ i{
     padding:10px;
     font-size:8em;
 }
+.VC{
+    position:relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5vw; 
+}
 .qf{
     
     position:relative;
