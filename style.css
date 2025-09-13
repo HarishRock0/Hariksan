@@ -237,12 +237,12 @@ i{
 }
 .option:hover, i:hover , #xml:hover{
     animation: jump 0.5s ease;
-    color:skyblue;
+    color:#fb8c00;
     cursor: pointer;
 }
 #xml:hover{
     animation: jump 0.5s ease;
-    color:skyblue;
+    color:#fb8c00;
     cursor: pointer;
 }   
 
