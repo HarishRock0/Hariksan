@@ -120,7 +120,6 @@ body{
     border-radius: 1.2rem;
     box-shadow: 0 28px 60px rgba(0,0,0,0.55);
     border: 1px solid rgba(255,255,255,0.08);
-    margin-top: -2rem;
 }
 
 @keyframes moveR {
@@ -272,14 +271,18 @@ body{
     width: 50%;
     flex: 1;
     margin-left: 3rem;
-    margin-top: 1rem;
+    margin-top: 0;
+    min-height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     animation: slideInFromRight 1.5s linear forwards;
 }
 
 .about-section{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     margin-left: 0;
@@ -297,7 +300,7 @@ body{
 }
 
 .about-intro-card{
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 0rem 0;
     padding: 2rem;
     background: transparent;
     border: none;
@@ -556,6 +559,15 @@ h1{
     font-family: 'Mulish', 'Inter', 'Segoe UI', sans-serif;
     font-weight: 800;
 }
+
+.about-content h1{
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
+    text-align: right;
+    max-width: 95%;
+    margin-left: auto;
+}
+
 .services h1,
 .projects h1,
 .qf h1,

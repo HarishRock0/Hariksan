@@ -43,7 +43,7 @@ function scr1() {
     // Get the target section by its ID
     const targetSection = document.getElementById('qf');
     // Scroll to the top of the target section
-    targetSection.scrollIntoView({ behavior: 'smooth', block:"center" });
+    targetSection.scrollIntoView({ behavior: 'smooth', block:"start" });
 }
 
 function scr2() {
@@ -51,7 +51,7 @@ function scr2() {
     const targetSection = document.getElementById('services');
 
     // Scroll to the top of the target section
-    targetSection.scrollIntoView({ behavior: 'smooth', block:"center"});
+    targetSection.scrollIntoView({ behavior: 'smooth', block:"start"});
 }
 
 function scr3(){
@@ -59,23 +59,23 @@ function scr3(){
     const vcElement = document.getElementById('VC');
     const target = contactElement || vcElement;
     if(target){
-        target.scrollIntoView({behavior: 'smooth', block:"center"});
+        target.scrollIntoView({behavior: 'smooth', block:"start"});
     }
 }
 
 function scr4(){
     const target = document.getElementById('about');
-    target.scrollIntoView({behavior: 'smooth', block:"center"});
+    target.scrollIntoView({behavior: 'smooth', block:"start"});
 }
 
 function scr5(){
     const target = document.getElementById('projects');
-    target.scrollIntoView({behavior: 'smooth', block:"center"});
+    target.scrollIntoView({behavior: 'smooth', block:"start"});
 }
 
 function scr6(){
-    const target = document.getElementById('qf');
-    target.scrollIntoView({behavior: 'smooth', block:"center"});
+    const target = document.getElementById('certifications');
+    target.scrollIntoView({behavior: 'smooth', block:"start"});
 }
 
 
