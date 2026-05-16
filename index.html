@@ -17,38 +17,66 @@
     
     <div class="nav">
          <div class="name">
-            Hariksan Thulasithas
+           Hariksan Thulasithas
          <div class="slogan"> Turn ideas to reality</div>
          </div>
         <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#" onclick="scr1()">Skills</a></li>
-        <li><a href="#" onclick="scr2()">services</a></li>
-        <li><a href="#" onclick="scr3()">Contact</a></li>
-        <li><a href="#" onclick="scr4()">About</a></li>
+        <li><a href="#" onclick="scr0(); return false;">Home</a></li>
+        <li><a href="#" onclick="scr1(); return false;">Skills</a></li>
+        <li><a href="#" onclick="scr2(); return false;">services</a></li>
+        <li><a href="#" onclick="scr5(); return false;">Projects</a></li>
+        <li><a href="#" onclick="scr6(); return false;">Credentials</a></li>
+        <li><a href="#" onclick="scr3(); return false;">Contact</a></li>
+        <li><a href="#" onclick="scr4(); return false;">About</a></li>
         </ul>
         
         <div class="but">
         <button href="*" class="hire" onclick="hire()">Hire</button>
         </div>
     </div>
-    
-    <img class="pic" src="mypic.png" alt="picture">
-
 
     <div class="main" id="about">
-        <h1>About me</h1>
-        <h3><div class="sub">I am Hariksan,A Creative fullstack developer!</div>
-        <div class="sub">Currently I am following AI & Data Science at Robert Gordon University</div>
-        <div class="sub">I've been freelancing for 5 years</div>
-        <div class="sub">Have good experience about websites and softwares</div>
-        <div class="sub">I develop softwares and make creative websites!</div>
-        <div class="sub">I am always curious about new technology and designs!</div></h3>
+        <div class="about-section">
+            <img class="pic" src="mypic.png" alt="picture">
+            <div class="about-content">
+                <div class="about-intro-card">
+                    <h2>Hariksan Thulasithas</h2>
+                    <p class="intro-subtitle">Creative Fullstack Developer | AI & Data Science Enthusiast | Cloud Architecture Specialist</p>
+                    <p class="intro-description">Building intelligent, scalable solutions that transform ideas into impactful digital experiences. Passionate about innovation, clean code, and continuous learning.</p>
+                </div>
+
+                <h1>About me</h1>
+
+                <div class="about-story">
+                    <p>I'm not just a developer—I'm a problem solver obsessed with creating meaningful digital experiences. What started as curiosity has evolved into 5+ years of translating ambitious ideas into working solutions that people actually enjoy using.</p>
+                    
+                    <p>My journey spans from building responsive websites that users love to architecting cloud solutions that scale effortlessly. But what really drives me is the intersection of <span class="highlight">AI, Data Science, and creative design</span>—where technology becomes intelligent, intuitive, and beautiful.I believe in writing clean code, learning continuously, and never settling for "good enough." Whether I'm debugging a complex algorithm, optimizing a database, or designing a pixel-perfect interface, I bring the same passion and attention to detail.
+
+                    <p>Currently pursuing my degree in AI & Data Science at Robert Gordon University, I'm constantly exploring emerging technologies and best practices. I love collaborating with teams, sharing knowledge, and building projects that make a real impact.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="about-highlights-section">
+        <div class="about-highlights">
+            <div class="highlight-item">
+                <div class="highlight-number">5+</div>
+                <div class="highlight-text">Years of Freelance Experience</div>
+            </div>
+            <div class="highlight-item">
+                <div class="highlight-number">50+</div>
+                <div class="highlight-text">Projects Completed</div>
+            </div>
+            <div class="highlight-item">
+                <div class="highlight-number">10+</div>
+                <div class="highlight-text">Technologies Mastered</div>
+            </div>
+        </div>
+    </div>
 
     <div class="services" >
-<h1  style="margin-top: 5vw;" id="services">Services I Provide</h1>
+<h1 id="services">Services I Provide</h1>
 
         <div class="option">
             Website Development
@@ -175,7 +203,7 @@
 
 
     <div class="qf" id="qf">
-    <h1   style="margin-top: 5vw;" > Qualifications </h1>
+    <h1>Qualifications</h1>
     
         <ul style="margin:0; padding:0;">
             

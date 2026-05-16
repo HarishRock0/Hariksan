@@ -23,6 +23,12 @@ function Detail(a){
     alert("Django is a high-level Python web framework that enables rapid development of secure and maintainable websites")
   }
 }
+
+function scr0(){
+    // Scroll to top smoothly
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function hire(){
     var txt;
     if (confirm("please contact me for hires using the contact details below!")) {
@@ -49,12 +55,26 @@ function scr2() {
 }
 
 function scr3(){
-    const target = document.getElementById('contact');
-    target.scrollIntoView({behavior: 'smooth', block:"center"});
+    const contactElement = document.getElementById('contact');
+    const vcElement = document.getElementById('VC');
+    const target = contactElement || vcElement;
+    if(target){
+        target.scrollIntoView({behavior: 'smooth', block:"center"});
+    }
 }
 
 function scr4(){
     const target = document.getElementById('about');
+    target.scrollIntoView({behavior: 'smooth', block:"center"});
+}
+
+function scr5(){
+    const target = document.getElementById('projects');
+    target.scrollIntoView({behavior: 'smooth', block:"center"});
+}
+
+function scr6(){
+    const target = document.getElementById('qf');
     target.scrollIntoView({behavior: 'smooth', block:"center"});
 }
 
