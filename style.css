@@ -120,7 +120,6 @@ body{
     border-radius: 1.2rem;
     box-shadow: 0 28px 60px rgba(0,0,0,0.55);
     border: 1px solid rgba(255,255,255,0.08);
-    align-self: flex-start;
     margin-top: -2rem;
 }
 
@@ -280,7 +279,7 @@ body{
 .about-section{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
     width: 100%;
     margin-left: 0;
